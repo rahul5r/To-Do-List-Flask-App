@@ -46,7 +46,7 @@ Follow these steps to get the application running locally:
         source venv/bin/activate
         ```
     * On Windows:
-        ```bash
+        ```
         python -m venv venv
         .\venv\Scripts\activate
         ```
