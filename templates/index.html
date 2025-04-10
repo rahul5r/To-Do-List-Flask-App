@@ -19,7 +19,7 @@
                 <td> {{ task.date_created.date() }} </td>
                 <td> {{ task.completed }} </td>
                 <td> 
-                    <a href=""> Completed </a>
+                    <a href="/status/{{ task.id }}"> Completed </a>
                     <br>
                     <a href="/delete/{{ task.id }}"> Delete </a>
                     <br>

@@ -14,7 +14,7 @@ db = SQLAlchemy(app)
 class Todo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(200), nullable=False)
-    completed = db.Column(db.Integer, default=0)
+    completed = db.Column(db.Integer, default="Not Completed")
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
     
     def __repr__(self):
@@ -66,6 +66,17 @@ def update(id):
     else:
         return render_template("update.html", task=task)
 
+
+@app.route('/status/<id>')
+def status(id):
+    task = Todo.query.get_or_404(id)
+    
+    task.completed = "Completed"
+    try: 
+        db.session.commit()
+        return redirect('/')
+    except:
+        return "There was an Issue in updating your task"
 
 
 
