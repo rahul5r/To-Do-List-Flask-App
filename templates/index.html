@@ -1,30 +1,39 @@
 {% extends 'base.html' %}
 
 {% block head %} 
-<h1 class="header">Task Master</h1>
-
+<h1> Task Master </h1>
 {% endblock %}
 
 {% block body %} 
-<div class="container">
-    <table class="task-table">
+<div>
+    <table>
         <tr>
-            <th>Task</th>
-            <th>Added</th>
-            <th>Status</th>
-            <th>Actions</th>
+            <th> Task </th>
+            <th> Added </th>
+            <th> Status </th>
+            <th> Actions </th>
         </tr>
-
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <a href="">Completed</a><br>
-                <a href="">Delete</a><br>
-                <a href="">Update</a>
-            </td>
-        </tr>
+        {% for task in tasks %}
+            <tr>
+                <td> {{ task.content }} </td>
+                <td> {{ task.date_created.date() }} </td>
+                <td> {{ task.completed }} </td>
+                <td> 
+                    <a href=""> Completed </a>
+                    <br>
+                    <a href=""> Delete </a>
+                    <br>
+                    <a href=""> Update </a>
+                </td>
+            </tr>
+        {% endfor %}
     </table>
+
+    <form action="/" method="POST">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Add Task">
+    </form>
+
 </div>
 {% endblock %}
+
