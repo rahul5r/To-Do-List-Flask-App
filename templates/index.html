@@ -1,10 +1,30 @@
 {% extends 'base.html' %}
 
 {% block head %} 
-<h1>Template </h1>
+<h1 class="header">Task Master</h1>
+
 {% endblock %}
 
 {% block body %} 
+<div class="container">
+    <table class="task-table">
+        <tr>
+            <th>Task</th>
+            <th>Added</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <a href="">Completed</a><br>
+                <a href="">Delete</a><br>
+                <a href="">Update</a>
+            </td>
+        </tr>
+    </table>
+</div>
 {% endblock %}
-

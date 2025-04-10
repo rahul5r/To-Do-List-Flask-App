@@ -2,3 +2,33 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header, .page-title {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.task-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    font-family: Arial, sans-serif;
+}
+
+.task-table th,
+.task-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.task-table th {
+    background-color: #f2f2f2;
+}
