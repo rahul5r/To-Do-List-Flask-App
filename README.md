@@ -57,7 +57,7 @@ Follow these steps to get the application running locally:
     ```
 
 5.  **Run the application:**
-        ```bash
+        ```
         python app.py
         ```
 
@@ -70,8 +70,6 @@ Follow these steps to get the application running locally:
 * Click the "Completed" button next to a task to mark it as finished.
 * Click the "Update" button to update that task.
 * Click the "Delete" button to remove a task permanently.
-
-*(Adjust based on your actual UI elements and workflow)*
 
 ## Contributing
 
