@@ -70,13 +70,3 @@ Follow these steps to get the application running locally:
 * Click the "Completed" button next to a task to mark it as finished.
 * Click the "Update" button to update that task.
 * Click the "Delete" button to remove a task permanently.
-
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or find any issues, please feel free to open an issue or submit a pull request.
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
